@@ -101,3 +101,31 @@ right: 0px;
     line-height: 1.5em;
     color: rgb(82, 80, 80);
 }
+
+aside {
+    display: grid;
+    grid-template-columns: 70px 140px;
+    grid-template-areas:"header header" 
+                        "image  text"
+                        "image  text"
+                        "image  text"
+                        "image  text";
+    border: 1px solid red;
+}
+
+.aside-header {
+    border-bottom: 1px solid grey;
+    padding: 5px;
+    grid-area: header;
+    justify-self: center;
+}
+
+aside>p {
+    grid-area: text;
+}
+
+aside img {
+    grid-area: image;
+    height: 70px;
+
+}
