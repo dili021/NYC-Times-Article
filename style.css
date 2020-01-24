@@ -150,7 +150,8 @@ aside>img {
 }
 
 .article-3 {
-    width: 55vw
+    width: 55vw;
+    margin-bottom: 20px;
 }
 
 
@@ -189,16 +190,23 @@ font-weight: bold;
     word-wrap: break-word;
     word-break: break-all;
 }
+
  .article-3-image-text span {
     padding: 1px;
     font-weight: bold;
    
 }
 
-.text-1, .text-2, .text-3, .text-4 {
+ .text-1, .text-2, .text-3, .text-4 {
     grid-area: text1;
-    position: absolute;
+    position: absolute;  
 }
+
+.text-5, .text-6, .text-7, .text-8 {
+    position: absolute;
+    grid-area: text2;
+}
+
 .text-1 {
     grid-column: 1 / 2;
 }
@@ -215,6 +223,22 @@ font-weight: bold;
     grid-column: 4 / 5;
 }
 
+.text-5 {
+    grid-column: 1 / 2;
+}
+
+.text-6 {
+    grid-column: 2 / 3;
+}
+
+.text-7 {
+    grid-column: 3 / 4;
+}
+
+.text-8 {
+    grid-column: 4 / 5;
+}
+
 .article-3-image-text img {
     width: 100%;
     
@@ -225,7 +249,20 @@ font-weight: bold;
     
 }
 
+footer {
+width: 60px;
+content: '';
+height: 1px;
+margin: 0 0 13px;
+font-size: smaller;
+background-color:
+#000;
+}
 
+footer div {
+    width: 100vw;
+    padding-top: 15px;
+}
 
 
 
