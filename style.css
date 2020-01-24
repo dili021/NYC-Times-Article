@@ -174,24 +174,60 @@ font-weight: bold;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+    position: relative;
+    width: 100%;
+    grid-auto-flow: column;
+    grid-template-areas: "pics1 pics1 pics1 pics1"
+                        "text1 text1 text1 tex1"
+                        "pics2 pics2 pics2 pics2"
+                       "text2 text2 text2 tex2";
+}
+
+.article-3-image-text p {
+    font-size: x-small;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+ .article-3-image-text span {
+    padding: 1px;
+    font-weight: bold;
+   
+}
+
+.text-1, .text-2, .text-3, .text-4 {
+    grid-area: text1;
     position: absolute;
-    right: 200px;
+}
+.text-1 {
+    grid-column: 1 / 2;
+}
+
+.text-2 {
+    grid-column: 2 / 3;
+}
+
+.text-3 {
+    grid-column: 3 / 4;
+}
+
+.text-4 {
+    grid-column: 4 / 5;
 }
 
 .article-3-image-text img {
-    width: 65vw;
-    /* margin-left: -6.4rem; */
+    width: 100%;
+    
     position: relative;
-    grid-row: 1 -1;
-    grid-column: 1 -1;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    object-fit: cover;
     
 }
 
 
 
-.text-1 {
-    grid-row: 2;
-}
+
 
 
 
