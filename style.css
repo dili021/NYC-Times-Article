@@ -133,3 +133,65 @@ aside>img {
     height: 70px;
 
 }
+
+.article-2 h2 {
+    font-weight: bold;
+    margin-left: 2.5rem;
+    margin-bottom: -1.5rem;
+    color: rgb(82, 80, 80);
+    font-size: 20px;
+}
+
+.article-2 p {
+    padding: 40px;
+    font-size: x-large;
+    line-height: 1.5em;
+    color: rgb(82, 80, 80);
+}
+
+.article-3 {
+    width: 55vw
+}
+
+
+.article-3 h2 {
+font-size: 20px;
+margin-left: -6rem;
+margin-bottom: .5rem;
+font-weight: bold;
+}
+
+.article-3 p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    margin-left: -6rem; 
+}
+
+.article-3-image-text {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    position: absolute;
+    right: 200px;
+}
+
+.article-3-image-text img {
+    width: 65vw;
+    /* margin-left: -6.4rem; */
+    position: relative;
+    grid-row: 1 -1;
+    grid-column: 1 -1;
+    
+}
+
+
+
+.text-1 {
+    grid-row: 2;
+}
+
+
+
