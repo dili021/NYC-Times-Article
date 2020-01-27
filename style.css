@@ -15,7 +15,7 @@ body {
 
 .nav-logo img{
     width: 60%;
-    height: 30px;
+    height: 40px;
 }
 
 .nav-icons > * {
@@ -345,14 +345,15 @@ iframe {
 .bottom-grid {
     display: grid;
     position: absolute;
-    right: 30px;
-    left: 80px;
-    grid-template-rows: 2fr 1fr;
-    grid-template-columns: 2fr 1fr;
+    right: 5%;
+    left: 5%;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     grid-gap: 15px;
     grid-template-areas: 
     "main   side"
-    "bottom side";
+    "bottom side"
+    "last   last";
     
 }
 
@@ -366,28 +367,28 @@ iframe {
     
 }
 
-.bottom-grid-main figcaption {
+.bottom-grid figcaption {
     font-size: x-small;
     color: grey;
     float: right;
     
 }
 
-.bottom-grid-main p {
+.bottom-grid p {
     font-size: small;
     padding: 4px 0px;
     color:grey;
 }
 
 
-.bottom-grid-main a {
+.bottom-grid-main a, .bottom-grid-bottom a {
     text-decoration: none;
     line-height: 1.5em;
     color: black;
     display: block;
 }
 
-.bottom-grid-main > div > a {
+.bottom-grid-main > div > a , .bottom-grid-bottom a {
     margin-top: 15px;
 }
 
@@ -398,11 +399,12 @@ iframe {
     width: 100%;
 }
 
-.grid-item-header {
+.grid-item-header, .bottom-grid-bottom h3 {
     grid-column: 1 /-1;
     border-top: 1px solid black;
     align-items: center;
     padding: 10px 0px;
+    font-weight: bold; 
     
 }
 
@@ -416,7 +418,7 @@ iframe {
 .side-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 25px repeat(10, 1fr);
+    grid-template-rows: 25px repeat(10, auto);
     grid-auto-flow: row;
     grid-gap: 15px;
     height: fit-content;
@@ -424,7 +426,7 @@ iframe {
 }
 
 .side-grid h3 {
-    border-top: 1px solid blac;
+    border-top: 1px solid black;
     color: black;
     font-weight: bold; 
     font-size: 16px;
@@ -438,11 +440,53 @@ iframe {
     color: black;
     text-decoration: none;
     display: block;
-    padding: 0px 0px 5px 0px;
+    padding: 5px 0px;
     height: 100%;
     line-height: 1.5em;
     font-weight: 500;
     font-size: 18px;
     border-top: 1px solid rgb(233, 220, 220);
 
+}
+
+.bottom-grid-bottom {
+    grid-area: bottom;
+    display: grid;
+    grid-gap: 15px;
+    grid-template: 25px 330px / repeat(3, 1fr);   
+    padding-top: 15px;
+}
+
+.last-grid {
+    grid-area: last;
+    display: grid;
+    grid-template: 25px 1fr 25px / repeat(6, 1fr);
+}
+
+.last-grid > img {
+    grid-column: 1 / 6;
+    width: 20%;
+    height: 40px;
+}
+
+.column1 {
+    grid-row: 2 / span 1;
+    padding: 2em;
+    
+}
+
+.last-grid>div  {
+    grid-row: 2 / span 1;
+    padding: 2em;
+}
+
+.last-grid-links {
+    display: block;
+    padding: 10px;
+}
+
+.column2 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    padding: 2em;
 }
