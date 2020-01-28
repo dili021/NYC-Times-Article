@@ -78,14 +78,16 @@ main {
 }
 
 .article-header {
-    width: 85%;
+    width: 70%;
     height: 50px;
     position: relative;
     padding: 30px 50px;
     display: flex;
     justify-content: space-between;
+    margin: auto;
     
 }
+
 
 .article-header i {
     padding: 7px;
@@ -103,7 +105,7 @@ main {
 }
 
 .main-text > p {
-    padding: 50px;
+    padding: 30px;
     font-size: 12px;
     line-height: 1.5em;
     color: rgb(0, 0, 0);
@@ -133,6 +135,8 @@ aside {
 
 aside>a {
     grid-area: "text";
+    color: black;
+    text-decoration: none;
 }
 
 aside>img {
@@ -272,7 +276,7 @@ background-color:
 }
 
 footer div {
-    width: 100vw;
+    width: 500px;
     padding: 15px;
     
 }
@@ -535,4 +539,54 @@ iframe {
 
 .column6 :nth-child(8) {
     padding-top: .5em;
+}
+
+/* page footer */
+
+.page-footer {
+    display: flex;
+    margin-top: -7rem;
+    border-top: 1px solid lightgray;
+}
+
+.page-footer a {
+    display: inline-block;
+    font-size: 12px;
+    white-space: nowrap;
+    padding: .8em;
+    color: rgb(68, 62, 62);
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}
+
+.last-footer {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    border-top: 1px solid black;
+    left: 0px;
+    right: 0px;
+    padding: 1.5em;
+    justify-content: center;
+}
+
+.last-footer p {
+   flex: 1;
+   text-align: center;
+}
+
+.last-footer a {
+ padding-right: 2em;
+ color: black;
+ text-decoration: none;
+ font-weight: 900;
+ font-size: 12px;
+}
+
+.last-footer i {
+    padding-right: 5em;
 }
