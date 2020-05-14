@@ -11,7 +11,7 @@
 - Project #3 of the Microverse HTML&CSS course, designed for practice of float, grid, and flexbox.
 
 # Tools used
-HTML & CSS
+- HTML & CSS
 
 # Live demo
 <a href="https://rawcdn.githack.com/dili021/NYC-Times-Article/12516d56368d62703137f8de7e841b8559f0320b/index.html" target="blank">Demo link</a>
@@ -22,7 +22,7 @@ HTML & CSS
 - Start experimenting
 
 # Credit
-Hats of to Microverse and The Odin Project
+- Hats of to Microverse and The Odin Project
 
 # Support
-Feel free to give a star if you like the project
+- Feel free to give a star if you like the project
