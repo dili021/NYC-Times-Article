@@ -14,7 +14,7 @@
 - HTML & CSS
 
 # Live demo
-<a href="https://rawcdn.githack.com/dili021/NYC-Times-Article/12516d56368d62703137f8de7e841b8559f0320b/index.html" target="blank">Demo link</a>
+- <a href="https://rawcdn.githack.com/dili021/NYC-Times-Article/12516d56368d62703137f8de7e841b8559f0320b/index.html" target="blank">Demo link</a>
 
 # Getting started
 - Clone or fork the repo to your machine
